@@ -1,6 +1,42 @@
 <script>
   import Logo from "./Logo.svelte";
 
+  const produtos = [
+    { href: "#", label: "Panfletos" },
+    { href: "#", label: "Folders" },
+    { href: "#", label: "Cartazes" },
+    { href: "#", label: "Livros" },
+    { href: "#", label: "Revistas" },
+    { href: "#", label: "Cátalogos" },
+    { href: "#", label: "Embalagens" },
+    { href: "#", label: "Encartes" },
+    { href: "#", label: "Jornais" },
+    { href: "#", label: "Rótulos" },
+  ];
+
+  const contatos = [
+    {
+      nome: "Orçamento",
+      numero: "75 99264-1598",
+      email: "orcamento@graficaplantao.com",
+    },
+    {
+      nome: "Cartões de visita",
+      numero: "75 3626-6591",
+      email: "cartao@graficaplantao.com",
+    },
+    {
+      nome: "Financeiro",
+      numero: "75 8848-4864",
+      email: "financeiro@graficaplantao.com",
+    },
+    {
+      nome: "Entrega",
+      numero: "75 3223-4315",
+      email: "",
+    },
+  ];
+
   const year = new Date().getFullYear();
 </script>
 
@@ -9,9 +45,7 @@
     <div class="lg:flex">
       <div class="w-full -mx-6 lg:w-2/5">
         <div class="px-6">
-          <a href="#">
-            <Logo />
-          </a>
+          <Logo />
 
           <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
             Nosso papel é dar uma ótima impressão.
@@ -113,34 +147,31 @@
           </div>
 
           <div>
-            <h3 class="text-gray-700 uppercase dark:text-white">Products</h3>
-            <a
-              href="#"
-              class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-              >Mega cloud</a
-            >
-            <a
-              href="#"
-              class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-              >Aperion UI</a
-            >
-            <a
-              href="#"
-              class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-              >Meraki UI</a
-            >
+            <h3 class="text-gray-700 uppercase dark:text-white">Produtos</h3>
+            {#each produtos as { href, label }}
+              <a
+                {href}
+                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                >{label}</a
+              >
+            {/each}
           </div>
 
           <div>
-            <h3 class="text-gray-700 uppercase dark:text-white">Contact</h3>
-            <span
-              class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-              >+1 526 654 8965</span
-            >
-            <span
-              class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-              >example@email.com</span
-            >
+            <h3 class="text-gray-700 uppercase dark:text-white">Contatos</h3>
+            {#each contatos as { nome, numero, email }}
+              <h3 class="text-gray-700 uppercase dark:text-white text-xs mt-2">
+                {nome}
+              </h3>
+              <span
+                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                >{numero}</span
+              >
+              <span
+                class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                >{email}</span
+              >
+            {/each}
           </div>
         </div>
       </div>
