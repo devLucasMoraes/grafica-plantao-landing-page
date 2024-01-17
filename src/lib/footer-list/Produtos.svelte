@@ -5,7 +5,7 @@
     { href: "#", label: "Cartazes" },
     { href: "#", label: "Livros" },
     { href: "#", label: "Revistas" },
-    { href: "#", label: "Cátalogos" },
+    { href: "#", label: "Catálogos" },
     { href: "#", label: "Embalagens" },
     { href: "#", label: "Encartes" },
     { href: "#", label: "Jornais" },

@@ -4,9 +4,9 @@
 
   const itens = [
     { href: "/", label: "Início" },
-    { href: "/sobre", label: "Sobre nós" },
-    { href: "/produtos", label: "Produtos" },
-    { href: "/contato", label: "Contato" },
+    { href: "#about", label: "Sobre nós" },
+    { href: "#products", label: "Produtos" },
+    { href: "#contact", label: "Contato" },
   ];
 </script>
 
@@ -15,7 +15,7 @@
 </a>
 
 {#each itens as { href, label }}
-  {#if $page.url.pathname === href}
+  {#if $page.url.href === href}
     <a
       {href}
       class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-sky-800 mx-1.5 sm:mx-6"

@@ -1,9 +1,9 @@
 <script>
-  import Atendimento from "./Atendimento.svelte";
-  import Contatos from "./Contatos.svelte";
   import LogoFooter from "./LogoFooter.svelte";
-  import Produtos from "./Produtos.svelte";
-  import Siganos from "./Siganos.svelte";
+  import Atendimento from "./footer-list/Atendimento.svelte";
+  import Contatos from "./footer-list/Contatos.svelte";
+  import Produtos from "./footer-list/Produtos.svelte";
+  import Siganos from "./footer-list/Siganos.svelte";
 
   const year = new Date().getFullYear();
 </script>
