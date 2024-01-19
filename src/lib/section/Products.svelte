@@ -90,24 +90,21 @@
   <div class="grid grid-cols-1 gap-10 mt-10 md:grid-cols-2 lg:grid-cols-3">
     {#each images as image}
       {#if (selectedCategory === "todos" || image.category === selectedCategory) && image.colspan2}
-        <a
-          href="#"
-          class="transition-all duration-500 lg:col-span-2 hover:scale-105"
-        >
+        <span class="transition-all duration-500 lg:col-span-2 hover:scale-105">
           <img
             class="object-cover object-top w-full rounded-lg shadow-md shadow-gray-200 h-80 xl:h-96"
             src={image.src}
             alt=""
           />
-        </a>
+        </span>
       {:else if image.colspan2 === false && (selectedCategory === "todos" || image.category === selectedCategory)}
-        <a href="#" class="transition-all duration-500 hover:scale-105">
+        <span class="transition-all duration-500 hover:scale-105">
           <img
             class="object-cover object-top w-full rounded-lg shadow-md shadow-gray-200 h-80 xl:h-96"
             src={image.src}
             alt=""
           />
-        </a>
+        </span>
       {/if}
     {/each}
   </div>

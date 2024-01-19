@@ -15,11 +15,10 @@
 
 <div>
   <h3 class="text-gray-700 uppercase dark:text-white">Produtos</h3>
-  {#each produtos as { href, label }}
-    <a
-      {href}
+  {#each produtos as { label }}
+    <span
       class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-      >{label}</a
+      >{label}</span
     >
   {/each}
 </div>
