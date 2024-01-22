@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import Navbar from "./Navbar.svelte";
+  import NavbarTest from "./Navbar.svelte";
 
   /**
    * @type {HTMLElement}
@@ -11,7 +11,7 @@
 
   onMount(() => {
     const handleScroll = () => {
-      const currentScrollY = window.pageYOffset;
+      const currentScrollY = window.scrollY;
 
       if (currentScrollY < lastScrollY) {
         navbar.classList.remove("-translate-y-full");
@@ -35,8 +35,8 @@
   bind:this={navbar}
 >
   <div
-    class="container flex items-center justify-center p-6 mx-auto text-gray-200"
+    class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center text-gray-200"
   >
-    <Navbar />
+    <NavbarTest />
   </div>
 </nav>
