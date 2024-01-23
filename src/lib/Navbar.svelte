@@ -34,7 +34,7 @@
   <div class="flex md:hidden">
     <button
       on:click={toggleMenu}
-      class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+      class="text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400"
       aria-label="Toggle menu"
     >
       {#if isOpen}
@@ -87,13 +87,13 @@
       {#if $page.url.href === href}
         <a
           {href}
-          class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-sky-800 mx-1.5 sm:mx-6"
+          class="transition-colors duration-300 transform text-gray-200 border-b-2 border-sky-800 mx-1.5 sm:mx-6"
           >{label}</a
         >
       {:else}
         <a
           {href}
-          class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-sky-800 mx-1.5 sm:mx-6"
+          class="border-b-2 border-transparent transition-colors duration-300 transform hover:text-gray-200 hover:border-sky-800 mx-1.5 sm:mx-6"
           >{label}</a
         >
       {/if}

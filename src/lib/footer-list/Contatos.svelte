@@ -24,18 +24,15 @@
 </script>
 
 <div>
-  <h3 class="text-gray-700 uppercase dark:text-white">Contatos</h3>
+  <h3 class=" uppercase text-white">Contatos</h3>
   {#each contatos as { nome, numero, email }}
-    <h3 class="text-gray-700 uppercase dark:text-white text-xs mt-2">
+    <h3 class=" uppercase text-white text-xs mt-2">
       {nome}
     </h3>
-    <span
-      class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+    <span class="block mt-2 text-sm text-gray-400 hover:underline"
       >{numero}</span
     >
-    <span
-      class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-      >{email}</span
+    <span class="block mt-2 text-sm text-gray-400 hover:underline">{email}</span
     >
   {/each}
 </div>

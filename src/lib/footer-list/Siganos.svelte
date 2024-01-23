@@ -1,9 +1,9 @@
 <div>
-  <h3 class="text-gray-700 uppercase dark:text-white">Siga-nos nas redes</h3>
+  <h3 class="uppercase text-white">Siga-nos nas redes</h3>
 
   <a
     href="https://www.instagram.com/graficaplantao/"
-    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+    class="block mt-2 text-sm text-gray-400 hover:underline"
     aria-label="Instagram"
   >
     <svg
@@ -57,7 +57,7 @@
   </a>
   <a
     href="https://www.facebook.com/graficaplantao/?locale=pt_BR"
-    class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+    class="block mt-2 text-sm text-gray-400 hover:underline"
     aria-label="Facebook"
   >
     <svg
