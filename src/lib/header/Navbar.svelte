@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import Logo from "./Logo.svelte";
+  import Logo from "../Logo.svelte";
 
   let isOpen = false;
 

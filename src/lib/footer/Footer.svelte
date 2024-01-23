@@ -1,5 +1,5 @@
 <script>
-  import LogoFooter from "./LogoFooter.svelte";
+  import LogoFooter from "../LogoFooter.svelte";
   import Atendimento from "./footer-list/Atendimento.svelte";
   import Contatos from "./footer-list/Contatos.svelte";
   import Produtos from "./footer-list/Produtos.svelte";

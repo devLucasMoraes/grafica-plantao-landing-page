@@ -1,8 +1,8 @@
 <script>
-  import About from "$lib/section/About.svelte";
-  import Cards from "$lib/section/Cards.svelte";
-  import Contact from "$lib/section/Contact.svelte";
-  import Products from "$lib/section/Products.svelte";
+  import About from "$lib/sections/About.svelte";
+  import Cards from "$lib/sections/Cards.svelte";
+  import Contact from "$lib/sections/Contact.svelte";
+  import Products from "$lib/sections/Products.svelte";
 </script>
 
 <main class="bg-white">

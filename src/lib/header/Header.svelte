@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import NavbarTest from "./Navbar.svelte";
+  import Navbar from "./Navbar.svelte";
 
   /**
    * @type {HTMLElement}
@@ -37,6 +37,6 @@
   <div
     class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center text-gray-200"
   >
-    <NavbarTest />
+    <Navbar />
   </div>
 </nav>
